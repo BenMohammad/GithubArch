@@ -19,7 +19,7 @@ public class MainActivity extends AppCompatActivity implements HasSupportFragmen
     @Inject
     DispatchingAndroidInjector<Fragment> dispatchingAndroidInjector;
 
-    private static String USER_LOGIN = "JakeWharton";
+    private static String USER_LOGIN = "BenMohammad";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,7 +32,7 @@ public class MainActivity extends AppCompatActivity implements HasSupportFragmen
 
 
     private void showFragment(Bundle savedInstanceState) {
-        if(savedInstanceState != null) {
+        if(savedInstanceState == null) {
             UserProfileFragment fragment = new UserProfileFragment();
 
             Bundle b = new Bundle();
